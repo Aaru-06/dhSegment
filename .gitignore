@@ -1,0 +1,5 @@
+dh_segment/__pycache__/
+dh_segment/io/__pycache__/
+dh_segment/utils/__pycache__/
+pages/
+pretrained_models/resnet_v1_50.ckpt
