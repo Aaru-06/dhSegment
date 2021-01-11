@@ -3,3 +3,9 @@ dh_segment/io/__pycache__/
 dh_segment/utils/__pycache__/
 pages/
 pretrained_models/resnet_v1_50.ckpt
+demo/model.zip
+demo/model/
+dh_segment/inference/__pycache__/
+dh_segment/post_processing/__pycache__/
+demo/processed_images
+demo/pages

@@ -1,0 +1,4 @@
+for OSError during python demo.py
+thrown from "from shapely.geometry import polygon"
+
+use conda install -c conda-forge shapely
