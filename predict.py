@@ -45,13 +45,13 @@ def format_quad_to_string(quad):
 if __name__ == '__main__':
 
     # If the model has been trained load the model, otherwise use the given model
-    model_dir = 'demo/page_model/export'
+    model_dir = 'trained_model/export'
     if not os.path.exists(model_dir):
-        model_dir = 'demo/model/'
+        model_dir = 'model/'
 
-    input_files = glob('demo/pages/test_a1/images/*')
+    input_files = glob('prediction_input/images/*')
 
-    output_dir = 'demo/processed_images'
+    output_dir = 'prediction_output/'
     os.makedirs(output_dir, exist_ok=True)
     # PAGE XML format output
     output_pagexml_dir = os.path.join(output_dir, PAGE_XML_DIR)
@@ -97,7 +97,7 @@ if __name__ == '__main__':
                 page_border = PAGE.Border()
 
             basename = os.path.basename(filename).split('.')[0]
-            imsave(os.path.join(output_dir, '{}_boxes.jpg'.format(basename)), original_img)
+            imsave(os.path.join(output_dir, '{}_segmented.jpg'.format(basename)), original_img)
 
             page_xml = PAGE.Page(image_filename=filename, image_width=original_shape[1], image_height=original_shape[0],
                                  page_border=page_border)
