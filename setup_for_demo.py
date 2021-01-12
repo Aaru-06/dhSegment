@@ -30,6 +30,9 @@ if __name__ == '__main__':
               desc="Downloading sample data") as t:
         urllib.request.urlretrieve(link[1], sampledata,
                                    reporthook=progress_hook(t))
+    print("Unziping sample_data.zip..")
+    with zipfile.ZipFile("sample_data.zip",'r') as actualzipfile:
+        actualzipfile.extractall()
     print("Done......")
     print("copy the images to be segmented into the prediction_input/images")
     print("run \"python predict.py\"")
