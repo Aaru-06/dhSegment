@@ -18,7 +18,7 @@ def progress_hook(t):
 
 if __name__ == '__main__':
     modelname = "model.zip"
-    sampledata = "sample_data.zip"
+    sampledata = "pages.zip"
     with tqdm(unit='B', unit_scale=True, unit_divisor=1024, miniters=1,
               desc="Downloading pre-trained model") as t:
         urllib.request.urlretrieve(link[0], modelname,
@@ -31,8 +31,8 @@ if __name__ == '__main__':
         urllib.request.urlretrieve(link[1], sampledata,
                                    reporthook=progress_hook(t))
     print("Unziping sample_data.zip..")
-    with zipfile.ZipFile("sample_data.zip",'r') as actualzipfile:
+    with zipfile.ZipFile("pages.zip",'r') as actualzipfile:
         actualzipfile.extractall()
     print("Done......")
-    print("copy the images to be segmented into the prediction_input/images")
+    print("copy the images to be segmented from pages folder into the prediction_input/images")
     print("run \"python predict.py\"")

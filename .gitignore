@@ -10,7 +10,7 @@ dh_segment/network/__pycache__/
 dist/
 model/
 model.zip
-sample_data.zip
-sample_data/
+pages.zip
+pages/
 prediction_input/images/*
 prediction_output/*
