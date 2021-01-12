@@ -9,3 +9,4 @@ dh_segment.egg-info/
 dh_segment/network/__pycache__/
 dist/
 model/
+model.zip

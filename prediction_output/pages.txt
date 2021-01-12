@@ -1,1 +1,0 @@
-prediction_input/images\ABP_M_Freyung_010_0085.jpg,21,1094,38,9,824,22,807,1107
