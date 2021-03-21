@@ -14,3 +14,5 @@ pages.zip
 pages/
 prediction_input/images/*
 prediction_output/*
+venv/
+trained_model/*
